@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.planner {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-position: 0 -15vh;
+        object-fit: cover;
+    }
+    p {
+        position: absolute;
+        border-radius: 15px;
+        font-size: 20px;
+        &:hover {
+            zoom: 115%;
+        }
+    }
+}
+
+.hoverover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.footer {
+    text-align: center;
+}
+
+

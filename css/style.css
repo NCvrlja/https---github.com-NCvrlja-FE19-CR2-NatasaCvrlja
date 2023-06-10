@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.planner {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.planner img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-position: 0 -15vh;
+     object-position: 0 -15vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.planner p {
+  position: absolute;
+  border-radius: 15px;
+  font-size: 20px;
+}
+.planner p:hover {
+  zoom: 115%;
+}
+
+.hoverover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.hoverover:hover {
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
