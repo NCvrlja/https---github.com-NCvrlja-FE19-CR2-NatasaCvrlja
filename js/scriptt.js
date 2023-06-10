@@ -1,3 +1,4 @@
+// array for cards content
 const tasks = [{
     picture: "../images/cleaning.jpg",
     taskname: "Cleaning",
@@ -75,6 +76,7 @@ const tasks = [{
 const cards = document.getElementById("content")
 let increase = document.getElementsByClassName("priors");
 
+// cards loop
 
 for (let task of tasks) {
     content.innerHTML += `
@@ -105,6 +107,8 @@ for (let task of tasks) {
     `;
   }
 
+  // increase function
+
 for (let i = 0; i < increase.length; i++) {
     increase[i].addEventListener("click", function() {
       if (tasks[i].priority < 5) {
@@ -114,6 +118,8 @@ for (let i = 0; i < increase.length; i++) {
       }
     });
   }
+
+  // color changing function
 
 function getColorClass(value) {
     if (value <= 1) {
@@ -125,8 +131,10 @@ function getColorClass(value) {
     }
   }
   
-  const sortIcon = document.querySelector("#sortBtn");
+const sortIcon = document.querySelector("#sortBtn");
 sortIcon.addEventListener("click", sortCards);
+
+// sorting function
 
 function sortCards() {
   let sortedCards = Array.from(cards.children).sort((a, b) => {
